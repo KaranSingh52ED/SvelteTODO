@@ -1,7 +1,6 @@
 <main>
 	<section>
 		<h1>TaskBanao</h1>
-
 		<p>
 			This is a Tasklist Platform, where you can write your task and make them complete according
 			your preference.
@@ -31,11 +30,7 @@
 		align-items: center;
 		gap: 2rem;
 		flex-direction: column;
-		background-image: radial-gradient(
-			circle at 200% 150%,
-			var(--complementary-color),
-			var(--accent-color)
-		);
+		background-color: rgb(132, 166, 244);
 		overflow: hidden;
 	}
 
