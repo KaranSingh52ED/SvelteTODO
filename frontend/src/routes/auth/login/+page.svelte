@@ -74,7 +74,7 @@
     <Link href="/auth/create-account">Create an Account</Link>
 
     <p class="terms">
-      By logging into your account you accept CodeShare's privacy policy and
+      By logging into your account you accept TaskBanao's privacy policy and
       terms of service.
     </p>
   </div>
