@@ -1,15 +1,15 @@
-import PocketBase from "pocketbase";
-import { browser } from "$app/environment";
-import { writable } from "svelte/store";
-
+import PocketBase from 'pocketbase';
+import { browser } from '$app/environment';
+import { writable } from 'svelte/store';
+import { backendUrl } from '../../src/config';
 export const pb = writable<PocketBase | undefined>(undefined, (set) => {
-  if (!browser) {
-    return;
-  }
+	if (!browser) {
+		return;
+	}
 
-  const pocketbaseInstance = new PocketBase("http://localhost:8090");
+	const pocketbaseInstance = new PocketBase(`${backendUrl}`);
 
-  pocketbaseInstance.authStore.loadFromCookie(document.cookie);
+	pocketbaseInstance.authStore.loadFromCookie(document.cookie);
 
-  set(pocketbaseInstance);
+	set(pocketbaseInstance);
 });
